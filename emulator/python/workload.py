@@ -15,7 +15,7 @@ class workload:
 
         for i in range(0,num_tasks):
 
-            temp_id = i
+            temp_id = i + 1
             mem = random.randint(1,10)
             exec = random.randint(1,10)
 
@@ -34,10 +34,15 @@ class workload:
     def return_task_queue(self):
         return self.task_list
 
+    def return_task_queue_random(self):
+        return self.task_list_random
+
 
     def set_numTasks(self,num_tasks):
         self.numTasks = num_tasks
 
+    def return_number_task(self):
+        return self.numTasks
 
 
 

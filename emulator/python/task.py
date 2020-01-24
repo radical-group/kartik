@@ -13,8 +13,8 @@ class task:
     def __init__(self, id_task, mem, exec_time):
 
         self.set_id(id_task)
-        self.return_req_mem(mem)
-        self.reqExecTime(exec_time)
+        self.set_req_mem(mem)
+        self.set_req_execTime(exec_time)
 
     def return_id(self):
         return self.idTask
@@ -27,3 +27,9 @@ class task:
 
     def set_id(self,id):
         self.idTask = id
+
+    def set_req_mem(self,mem):
+        self.reqMemory = mem
+
+    def set_req_execTime(self,exec):
+        self.reqExecTime=exec
