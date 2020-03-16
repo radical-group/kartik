@@ -1,14 +1,19 @@
+#Emulator design: Rattan, Kartik
+#definition of a resource
+
+
 from node import node
+import random
 
 class Resource:
 
-    num_pi = 0
-    num_fog = 0
-    num_hpc = 0
-    numNodes = num_pi + num_fog + num_hpc
+    num_pi = 0              #Number of pi devices
+    num_fog = 0             #Number of fog devices
+    num_hpc = 0             #Number of cloud devices
+    numNodes = num_pi + num_fog + num_hpc   #total number of devices in the resource
 
-    node_list = []
-    node_list_random = []
+    node_list = []         #list of cores randomly ordered wrt execution time
+    node_list_random = []  #list of cores ordered in decreasing order of execution time
 
     def __init__(self, n1, n2, n3):
         self.num_pi = n1
@@ -24,7 +29,7 @@ class Resource:
            id_node = i+1
            type = "pi"
            cores = 1
-           power = 1.0              #i am taking tasks in the range 1-10 of memory and power
+           power = random.uniform(1,3)              #i am taking tasks in the range 1-10 of memory and power
            ram = 4
            storage = 1
            status = 0
@@ -40,7 +45,7 @@ class Resource:
            id_node = n2+i+1
            type = "fog"
            cores = 2
-           power = 5.0
+           power = random.uniform(4,6)
            ram = 16
            storage = 4
            status = 0
@@ -54,7 +59,7 @@ class Resource:
            id_node = n3 + n2 + i + 1
            type = "cloud"
            cores = 48
-           power = 10.0
+           power = random.uniform(7,10)
            ram = 96
            storage = 10
            status = 0
