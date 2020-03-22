@@ -1,10 +1,11 @@
 Three things that I am looking at right now:
 
-1) Vivek's emulator: I am trying to modify Vivek's emulator to use it for edge devices as well. There are three types of resources that we would e dealing with: Cloud, Fog & Edge. As discussed in the last meeting with Andre, three resources major differentiating properties are a) computational power & b) Bandwidth.
+1) Vivek's emulator: I am trying to modify Vivek's emulator to use it for edge devices as well. There are three types of resources that we would e dealing with: Cloud, Fog & Edge. As discussed in the last meeting with Andre, three resources major differentiating properties are a) computational power & b) data_rate.
 
-Vivek's emulator does not make any distinction between the cores, though they can have different computational powers. Also, I need to introduce Bandwidth into total_time_execution calculations.
+Vivek's emulator does not make any distinction between the cores, though they can have different computational powers. Also, I need to introduce data_rate into total_time_execution calculations.
 
-I have identified the changes and would have some initial results including different types of resources with different bandwidths (different communication protocols).
+
+I have identified the changes and would have some initial results including different types of resources with different data_rate(different communication protocols).
 
 2) IOTSim: I have continued to look into IOT simulator. I still need to figure out how I can introduce data sensitive tasks into the IOT simulator. All the tasks used currently are sleep tasks.
 
