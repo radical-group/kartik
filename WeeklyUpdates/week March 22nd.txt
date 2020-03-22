@@ -1,0 +1,11 @@
+Three things that I am looking at right now:
+
+1) Vivek's emulator: I am trying to modify Vivek's emulator to use it for edge devices as well. There are three types of resources that we would e dealing with: Cloud, Fog & Edge. As discussed in the last meeting with Andre, three resources major differentiating properties are a) computational power & b) Bandwidth.
+
+Vivek's emulator does not make any distinction between the cores, though they can have different computational powers. Also, I need to introduce Bandwidth into total_time_execution calculations.
+
+I have identified the changes and would have some initial results including different types of resources with different bandwidths (different communication protocols).
+
+2) IOTSim: I have continued to look into IOT simulator. I still need to figure out how I can introduce data sensitive tasks into the IOT simulator. All the tasks used currently are sleep tasks.
+
+3) I have been familiarized with  RADICAL ENTK and its api structure. I have realized I need to be more comfortable with RADICAL PILOT and its API for the PILOT-EDGE realization. I have started looking at the documentation of RADICAL-PILOT, though it is not much different than RADICAL-EDGE.
