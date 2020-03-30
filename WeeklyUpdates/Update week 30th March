@@ -1,0 +1,12 @@
+For the last week, I coded to extend Vivek's emulator and introduce new variables/features:
+
+1. I introduced the parameter data_rate/latency for the cores. This is the amount of instructions sent per unit time for execution on the core from the source sensor. It is also included in calculations for TTE
+2. I also updated the level of heterogenity for the cores. Till now, we can set up resources for cores with one distribution (uniform or normal).
+
+I have now introduced cores = num_edge + num_cloud + num_fog, i.e, the resource can now be divided into num_edge devices, num_fog devices and num_cloud devices.
+
+
+Next steps: 
+
+1. Testing for the above new features
+2. Introuduce data in\out for tasks to introduce capability for streaming\IOT
