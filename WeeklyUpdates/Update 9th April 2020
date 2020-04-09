@@ -1,0 +1,7 @@
+1) Results for different cores. 
+   1.1) Andre: Also run the same experiments with just Edge, Just fog, and just Cloud. The real schedule should be a sweet spot amongst the two experiments.
+   1.2) Instead of multiple of 3, use smaller task number in the multiples of 2,4,8,16,32.....
+2) Benchmark the resources
+   2.1) Andre: Run the K-means on Rraspberry pi and Xsede mahcine ( Or can also run them on different VMs) to benchmarks the metrics: Such as performance, execution power, Latency
+3) Using the generation concepts in Vivek's emulator, we can use more than one core for each task
+4) Make the taks data dependent. Using the subprocesses library in python, the task now have an associated args_task field which can accept arguments to run executables. The execution time for a task now includes the time spent in running the executable. 
