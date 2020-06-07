@@ -18,8 +18,8 @@ for i in range(0,1048576):
 #       'y': [79,51,53,78,59,74,73,57,69,75,51,32,40,47,53,36,35,58,59,50,25,20,14,12,20,5,29,27,8,7]
 #       }
 Data = {'x':x_list,
-'y':y_list
-}
+        'y':y_list
+       }
 df = DataFrame(Data,columns=['x','y'])
 #start = timeit.timeit()
 kmeans = KMeans(n_clusters=3).fit(df)
